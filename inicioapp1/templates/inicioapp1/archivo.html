@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block header %}
+    <header> 
+        <h2> Perro pulgiento </h2> 
+
+    </header>
+    {% endblock %}
+
+    
+
+    <h1>{% block titulo %} Hola llege de la pesca y pesque una docena por 10 lucas {% endblock %}</h1>
+    
+    {% block imagen %}
+    <img src="{% static 'inicioapp1/img/guau.jpg' %}" alt="">
+    {% endblock %}
+</body>
+{% block footer %}
+<footer> Pagina diseñada de repaso </footer>
+{% endblock %}
+</html>
